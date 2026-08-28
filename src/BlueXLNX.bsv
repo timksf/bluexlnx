@@ -8,6 +8,7 @@ import IBUFDS :: *;
 import JTAG_SIME2 :: *;
 import MMCME4_ADV :: *;
 import DiffClockAdapter :: *;
+import IOBUF :: *;
 
 export BSCANE2 :: *;
 export BUFG :: *;
@@ -17,5 +18,6 @@ export IBUFDS :: *;
 export JTAG_SIME2 :: *;
 export MMCME4_ADV :: *;
 export DiffClockAdapter :: *;
+export IOBUF :: *;
 
 endpackage
