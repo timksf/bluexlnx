@@ -9,20 +9,20 @@ interface IBUFDSClock_ifc;
 endinterface
 
 typedef struct {
-    Bool    p_DIFF_TERM;
-    Bool    p_IBUF_LOW_PWR;
+    String  p_DIFF_TERM;
+    String  p_IBUF_LOW_PWR;
     String  p_IOSTANDARD;
 } IBUFDS_Config;
 
 instance DefaultValue#(IBUFDS_Config);
-    function defaultValue = IBUFDS_Config { 
-        p_DIFF_TERM: False, 
-        p_IBUF_LOW_PWR: True,
+    function defaultValue = IBUFDS_Config {
+        p_DIFF_TERM: "FALSE",
+        p_IBUF_LOW_PWR: "TRUE",
         p_IOSTANDARD: "DEFAULT"
     };
 endinstance
 
-import "BVI" IBUFDS = 
+import "BVI" IBUFDS =
 module vMkIBUFDSClock#(IBUFDS_Config cfg, Clock clk_p, Clock clk_n)(IBUFDSClock_ifc);
 
     parameter DIFF_TERM     = cfg.p_DIFF_TERM;
