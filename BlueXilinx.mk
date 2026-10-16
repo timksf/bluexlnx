@@ -1,7 +1,11 @@
 #for BSVTools
-MAKEPATH := $(dir $(lastword $(MAKEFILE_LIST)))
-MODULENAME := BlueXilinx
-MODULEPATH := $(MAKEPATH)src
-EXTRA_BSV_LIBS += $(MODULEPATH)
+ifndef BLUEXLNX_MK_INCLUDED
+BLUEXLNX_MK_INCLUDED := 1
 
-$(info Adding $(MODULENAME) from $(MODULEPATH))
+BLUEXLNX_ROOT := $(abspath $(dir $(lastword $(MAKEFILE_LIST))))
+BLUEXLNX_SRC := $(BLUEXLNX_ROOT)/src
+EXTRA_BSV_LIBS += $(BLUEXLNX_SRC)
+
+$(info Adding BlueXilinx from $(BLUEXLNX_SRC))
+
+endif
