@@ -55,7 +55,7 @@ module vMkIOBUF#(IOBUF_Config_t cfg)(IOBUF_ifc);
     method O i();
 
     //pad
-    ifc_inout io(IO);
+    ifc_inout io(IO) clocked_by(no_clock) reset_by(no_reset);
 
     path(I, O);
     path(T, O);
