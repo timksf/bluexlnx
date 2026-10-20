@@ -7,6 +7,7 @@ import GLBL :: *;
 import IBUFDS :: *;
 import JTAG_SIME2 :: *;
 import MMCME4_ADV :: *;
+import PLLE2_ADV :: *;
 import DiffClockAdapter :: *;
 import IOBUF :: *;
 
@@ -17,6 +18,7 @@ export GLBL :: *;
 export IBUFDS :: *;
 export JTAG_SIME2 :: *;
 export MMCME4_ADV :: *;
+export PLLE2_ADV :: *;
 export DiffClockAdapter :: *;
 export IOBUF :: *;
 
