@@ -8,6 +8,7 @@ import IBUFDS :: *;
 import JTAG_SIME2 :: *;
 import MMCME4_ADV :: *;
 import PLLE2_ADV :: *;
+import ClockWires :: *;
 import DiffClockAdapter :: *;
 import IOBUF :: *;
 
@@ -19,6 +20,7 @@ export IBUFDS :: *;
 export JTAG_SIME2 :: *;
 export MMCME4_ADV :: *;
 export PLLE2_ADV :: *;
+export ClockWires :: *;
 export DiffClockAdapter :: *;
 export IOBUF :: *;
 
